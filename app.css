@@ -1,0 +1,206 @@
+/* - Red: hsl(1, 90%, 64%)
+- Blue: hsl(219, 85%, 26%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%) */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 50px;
+    overflow-y: auto;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: hsl(211, 68%, 94%);
+
+
+}
+
+
+main {
+
+    width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: white;
+}
+
+
+nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 0 5px;
+    color: hsl(224, 21%, 14%);
+}
+
+button {
+    background-color: transparent;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 0;
+    margin: 0 20px 0 0;
+    height: auto;
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(219, 12%, 42%);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+
+#notifications {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.notification {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 40%;
+    width: 95%;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.noti-1,
+.noti-2,
+.noti-3 {
+
+    background-color: hsl(210, 60%, 97%);
+}
+
+.notification div {
+
+    margin-left: 50px;
+
+}
+
+
+img {
+    width: 70px;
+    height: 70px;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(219, 12%, 42%);
+    margin: 0;
+    width: 100%;
+
+}
+
+.username {
+    font-weight: bolder;
+    color: hsl(224, 21%, 14%);
+    cursor: pointer;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: hsl(219, 12%, 42%);
+    font-weight: 600;
+}
+
+a:hover {
+    color: hsl(219, 96%, 28%);
+    font-weight: bold;
+}
+
+.red-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    background-color: hsl(1, 90%, 64%);
+    color: hsl(1, 90%, 64%);
+    margin: 0.5rem;
+    display: inline-block;
+    transform: translateY(40%);
+}
+
+
+
+
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    /* right: 5px;
+    top: 20px; */
+    width: 50px;
+}
+
+.dropbtn:hover {
+    background-color: hsl(210, 60%, 95%);
+    border-radius: 5px;
+}
+
+.pvt-msg {
+/* margin-bottom: 70px; */
+height: 100%;
+    position: relative;
+}
+
+.dropdown-content {
+
+    background-color: hsl(210, 60%, 95%);
+
+    width: 80%;
+    height: 90px;
+    align-items: center;
+padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 90px;
+    margin-top: 10px;
+    display: none;
+
+}
+
+.dropdown-content p {
+    margin: 10px 0 10px 10px;
+}
+
+@media only screen and (max-width: 800px){
+    .dropdown-content {
+        height: 100%;
+        margin-bottom: 50px;
+    }
+}
+
